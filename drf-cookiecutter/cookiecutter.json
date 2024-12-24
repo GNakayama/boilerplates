@@ -1,0 +1,11 @@
+{
+  "project_name": "Cookiecutter Website Simple",
+  "project_description": "A simple website project template",
+  "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
+  "main_folder": "{{ cookiecutter.project_name.lower().replace(' ', '-') }}",
+  "jwt_audience": "{{ cookiecutter.project_slug }}",
+  "jwt_issuer": "{{ cookiecutter.project_slug }}",
+  "_copy_without_render": [
+    "*.html"
+  ]
+}
